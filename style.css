@@ -1,7 +1,74 @@
+/**import font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
 /** Reset */
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    
+    font-family: "Open Sans";
+}
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    width: 795px;
+    height:512px ;
+    background-color: yellow;
+}
+
+/** card description*/
+
+.desc-top{
+    height: 200px;
+    padding: 40px 45px;
+    text-align: center;
+}
+
+.desc-top h4{
+    font-size:25px;
+}
+
+.desc-top h4:first-child{
+    font-weight: 300;
+}
+
+.desc-top h4:nth-child(2){
+    color:red;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.desc-top p{
+    font-size:18px;
+    color: #999;
+}
+
+/** */
+
+.cards-container{
+    display: flex;
+}
+
+.column{
+    flex:1;
+    height:312px ;
+}
+
+.cards-container .column:first-child{
+    background-color: blue;
+}
+
+.cards-container .column:nth-child(2){
+    background-color: red;
+}
+
+.cards-container .column:nth-child(3){
+    background-color: royalblue;
 }
